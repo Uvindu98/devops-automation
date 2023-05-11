@@ -24,7 +24,7 @@ pipeline {
                    sh 'docker login -u uvindu098 -p ${dockerhub}'
 
 }
-                   sh 'docker push javatechie/devops-integration'
+                   sh 'docker push Uvindu98/devops-integration'
                 }
             }
         }
