@@ -20,7 +20,7 @@ pipeline {
         stage('Push image to Hub'){
             steps{
                 script{
-                   withCredentials([string(credentialsId: 'dckrhub', variable: 'dockerhub')]) {
+                   withCredentials([usernameColonPassword(credentialsId: 'dockerhub', variable: 'dockerhubpwd')]) {
                    bat 'docker login -u uvindu098 -p ${dockerhub}'
 
 }
