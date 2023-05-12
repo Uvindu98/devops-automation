@@ -21,7 +21,7 @@ pipeline {
             steps{
                 script{
                    withCredentials([usernameColonPassword(credentialsId: 'dockerhub', variable: 'dockerhubpwd')]) {
-                   bat 'docker login -u uvindu098 -p ${dockerhubpwd}'
+                   bat 'docker login -u uvindu098 -p dckr_pat_8o5QucdDayIPdLR5lvFA86cMHIc'
 
 }
                    bat 'docker push uvindu98/devops-integration'
