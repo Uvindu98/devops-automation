@@ -13,7 +13,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build -t Uvindu98/devops-integration .'
+                    bat 'docker build -t uvindu98/devops-integration .'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
                    bat 'docker login -u uvindu098 -p ${dockerhub}'
 
 }
-                   bat 'docker push Uvindu98/devops-integration'
+                   bat 'docker push uvindu98/devops-integration'
                 }
             }
         }
