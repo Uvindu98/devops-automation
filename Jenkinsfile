@@ -22,9 +22,8 @@ pipeline {
                 script{
                   
                    bat 'docker login -u uvindu098 -p dckr_pat_8o5QucdDayIPdLR5lvFA86cMHIc'
-
-
-                   bat 'docker push uvindu98/devops-integration'
+                   bat 'docker tag uvindu98/devops-integration uvindu098/devops-integration:uvindu98/devops-integration'
+                   bat 'docker push uvindu98/devops-integration:uvindu98/devops-integration'
                 }
             }
         }
